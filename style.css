@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100dvh;
+  padding: 0 15% 0 15%;
+}
+
+/* Side Bar Section  */
+
+.side-bar {
+  display: grid;
+  background-color: rgb(84, 194, 238);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr 4fr;
+}
+.logo {
+  border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dText{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.menu {
+  border: 2px black solid;
+}
+.settings {
+  border: 2px black solid;
+}
+
+/* end Side Bar Section  */
+
+.main-box {
+  border: 2px black solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
+}
+/* header section */
+.header {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box3 box3 box4";
+}
+.search-bar {
+  border: 2px solid black;
+}
+.profile {
+  border: 2px solid black;
+}
+.user {
+  border: 2px solid black;
+}
+.fbutton {
+  border: 2px solid black;
+}
+/* end header section */
+/* main-conatent */
+.main-content {
+  background-color: rgb(226, 225, 225);
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box2 "
+    "box1 box1 box3 ";
+}
+
+.project {
+  border: 2px solid black;
+}
+.announcement {
+  border: 2px solid black;
+}
+.tranding {
+  border: 2px solid black;
+}
