@@ -31,7 +31,7 @@ img {
 
 .side-bar {
   display: grid;
-  background-color: rgb(84, 194, 238);
+  background-color: #2392d4;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 7fr;
@@ -100,19 +100,43 @@ img {
 }
 .profile {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 50px;
-  padding: 20px 0 0 0;
+  padding: 20px 6% 0 0;
 }
 .profileName{
   font-weight: 900;
   font-size: 2rem;
 }
 .user {
-  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 20px;
+}
+.user-para1{
+  font-size: 1rem;
+
+}
+.user-para2{
+  font-size: 1.5rem;
+
 }
 .fbutton {
-  border: 2px solid black;
+  display: flex;
+  gap: 50px;
+  padding: 5px 20px 5px 20px;
+  align-items: center;
+}
+
+.fbutton > button{
+  background-color: #2392d4;
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  border: none;
+
 }
 /* end header section */
 /* main-conatent */
@@ -126,10 +150,40 @@ img {
 
 .project {
   border: 2px solid black;
+  padding: 30px 50px 50px 20px;
+}
+.project > p{
+  font-size: 2rem;
+}
+.projectBox{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, minmax(250px, 1fr));
+  
+  gap: 50px;
+  padding-top: 30px;
+}
+.projectBox > div{
+  background-color: white;
+  border-radius: 10px;
+  border-left: #f0b429 solid 15px ;
+  font-size: 1.5rem;
+  text-align: justify;
+  padding: 30px 20px 20px 20px;
 }
 .announcement {
   border: 2px solid black;
+  padding: 30px 50px 50px 20px;
 }
+.announcement > p{
+  font-size: 2rem;
+}
+
 .tranding {
   border: 2px solid black;
+  padding: 30px 50px 50px 20px;
+}
+
+.tranding > p{
+  font-size: 2rem;
 }
