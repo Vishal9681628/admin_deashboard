@@ -32,17 +32,14 @@ img {
 .side-bar {
   display: grid;
   background-color: #2392d4;
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 7fr;
 }
 .logo {
-  
   display: flex;
   padding-left: 30px;
   align-items: center;
   font-weight: 900;
- 
 }
 .dText {
   font-size: 2rem;
@@ -85,9 +82,9 @@ img {
     "box1 box1 box2"
     "box3 box3 box4";
 }
-.search-box{
+.search-box {
   padding: 20px 0 0 30px;
-  
+
   display: flex;
   align-items: flex-start;
   gap: 30px;
@@ -105,7 +102,7 @@ img {
   gap: 50px;
   padding: 20px 6% 0 0;
 }
-.profileName{
+.profileName {
   font-weight: 900;
   font-size: 2rem;
 }
@@ -115,13 +112,11 @@ img {
   gap: 50px;
   padding-left: 20px;
 }
-.user-para1{
+.user-para1 {
   font-size: 1rem;
-
 }
-.user-para2{
+.user-para2 {
   font-size: 1.5rem;
-
 }
 .fbutton {
   display: flex;
@@ -130,60 +125,83 @@ img {
   align-items: center;
 }
 
-.fbutton > button{
+.fbutton > button {
   background-color: #2392d4;
   height: 40px;
   width: 150px;
   border-radius: 20px;
   border: none;
-
 }
 /* end header section */
 /* main-conatent */
 .main-content {
   background-color: rgb(226, 225, 225);
   display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "box1 box1 box2 "
-    "box1 box1 box3 ";
+    "box1 box2"
+    "box1 box3";
 }
 
 .project {
   border: 2px solid black;
   padding: 30px 50px 50px 20px;
 }
-.project > p{
+.project > p {
   font-size: 2rem;
 }
-.projectBox{
+.projectBox {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  grid-template-rows: repeat(3, minmax(250px, 1fr));
-  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+
   gap: 50px;
   padding-top: 30px;
 }
-.projectBox > div{
+.projectBox > div {
   background-color: white;
   border-radius: 10px;
-  border-left: #f0b429 solid 15px ;
+  border-left: #f0b429 solid 15px;
   font-size: 1.5rem;
   text-align: justify;
   padding: 30px 20px 20px 20px;
 }
 .announcement {
-  border: 2px solid black;
   padding: 30px 50px 50px 20px;
 }
-.announcement > p{
+.announcement > p {
   font-size: 2rem;
+}
+.aBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.aBox > div {
+  margin: 20px 0 20px 0;
+  border-bottom: black 2px solid;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 .tranding {
-  border: 2px solid black;
-  padding: 30px 50px 50px 20px;
+  padding: 10px 50px 50px 20px;
 }
 
-.tranding > p{
+.tranding > p {
   font-size: 2rem;
+}
+
+.tBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+.tBox > div {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 20px 0 20px 0;
 }
